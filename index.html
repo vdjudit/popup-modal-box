@@ -26,9 +26,22 @@
 
 
       </div>
-      <img  class="close-icon">
+      
       <span class="glyphicon glyphicon-remove"></span>
+      <class="close-icon" onclick="closeModel()">
 
     </div>
+    <script>
+
+      let modelBox=document.getElementById("modelBox");
+
+      document.onmouseleave = function(){
+        modelBox.style.display = "block";
+      }
+
+      function closeModel(){
+        modelBox.style.display = "none";
+      }
+    </script>
   </body>
 </html>
