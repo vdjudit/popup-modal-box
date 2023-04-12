@@ -5,42 +5,44 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
-    <div class="container">
-
-    </div>
+    <div class="container"></div>
     <div id="modelBox">
-      <img src="https://images.pexels.com/photos/2681751/pexels-photo-2681751.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width="100%">
+      <img
+        src="https://images.pexels.com/photos/2681751/pexels-photo-2681751.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        width="100%"
+      />
       <div class="offer-text">
         <h2>Get 15% OFF</h2>
         <small>on all beauty products</small>
         <p>Lorem ipsum dolor sit amet,consectetur</p>
-        <from>
-          <input type="email" placeholder="Email Adress">
+        <form>
+          <input type="email" placeholder="Email Adress" />
           <button type="Submit">Subscribe</button>
-        </from>
-
-
+        </form>
       </div>
-      
-      <span class="glyphicon glyphicon-remove"></span>
-      <class="close-icon" onclick="closeModel()">
 
+      <span
+        class="glyphicon glyphicon-remove close-icon"
+        onclick="closeModel()"
+      ></span>
     </div>
     <script>
+      let modelBox = document.getElementById('modelBox');
 
-      let modelBox=document.getElementById("modelBox");
+      document.onmouseleave = function () {
+        modelBox.style.display = 'block';
+      };
 
-      document.onmouseleave = function(){
-        modelBox.style.display = "block";
-      }
-
-      function closeModel(){
-        modelBox.style.display = "none";
+      function closeModel() {
+        modelBox.style.display = 'none';
       }
     </script>
   </body>

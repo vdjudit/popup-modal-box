@@ -11,7 +11,7 @@
   background-image: linear-gradient(450deg, #4f639b, #fff);
 }
 
-xmodelBox{
+#modelBox{
   position: fixed;
   top: 50%;
   left: 50%;
